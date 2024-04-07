@@ -4,7 +4,7 @@
 
 spt-app: web application of SPT model
 =====================================
-This project provides the visualization of the simulation results from
+This project provides the visualization of the simulation results at https://sptmodel.streamlit.app.
 
 Simulation of zonation-function relationships in the liver using coupled multiscale models: Application to drug-induced liver injury
 Steffen Gerhäusser, Lena Lambers, Luis Mandl, Julian Franquinet, Tim Ricken, Matthias König
