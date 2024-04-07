@@ -22,7 +22,7 @@ Run app
 =======
 To run the app use::
 
-    streamlit run spt_app.py
+    streamlit run main/spt_app.py
 
 License
 =======

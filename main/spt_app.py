@@ -1,8 +1,6 @@
 import pandas as pd
 import streamlit as st
-import numpy as np
 from pathlib import Path
-from PIL import Image
 import time
 import base64
 import cv2
@@ -20,7 +18,6 @@ st.set_page_config(
         """,
     },
 )
-# Remove whitespace from the top of the page and sidebar
 st.markdown("""
         <style>
                .block-container {
@@ -33,16 +30,15 @@ st.markdown("""
         """, unsafe_allow_html=True)
 
 
-data_path = Path(__file__).parent / "data"
+data_path = Path(__file__).parent.parent / "data"
 simulations_path = data_path / "simulations.tsv"
 
 @st.cache_data
 def load_data():
-    # Load data
+    """Load data."""
     df = pd.read_csv(simulations_path, sep="\t")
     simulations = df.sim_key.values
     patterns = df.pattern_name.unique()
-    boundary_flows = df.boundary_flow_key.unique()
     pattern2simulations = {}
     for pattern in patterns:
         pattern2simulations[pattern] = df[df.pattern_name == pattern].sim_key.values.tolist()
@@ -97,7 +93,7 @@ video_html = f"""
     </video>
 """
 video_placeholder.empty()
-time.sleep(0.5)
+time.sleep(0.1)
 video_placeholder.markdown(video_html, unsafe_allow_html=True)
 st.divider()
 
@@ -111,19 +107,6 @@ def image_to_base64(image_path):
     base64_image = base64.b64encode(encoded_image.tobytes()).decode("utf-8")
     return base64_image
 
-# image_path = data_path / f"{simulation_id}_10_86400.0.png"
+
 image_path = data_path / f"{simulation_id}.png"
 render_img_html(image_to_base64(str(image_path)))
-
-
-# st.image(image=Image.open(image_path), use_column_width=True)
-
-# col1, col2 = st.columns(2)
-# with col1:
-    # display image
-
-
-# with col2:
-#     pass
-#     # FIXME: add the individual plots for the sims;
-
