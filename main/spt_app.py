@@ -93,7 +93,7 @@ video_html = f"""
     </video>
 """
 video_placeholder.empty()
-time.sleep(0.1)
+time.sleep(1.0)
 video_placeholder.markdown(video_html, unsafe_allow_html=True)
 st.divider()
 
