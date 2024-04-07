@@ -52,10 +52,10 @@ if __name__ == "__main__":
         #     video_out=f"sim{k:>03}_h264.mp4",
         #     scale="2000:-1"
         # )
-        # convert_image(
-        #     image_in=f"sim{k:>03}_10_86400.0.png",
-        #     image_out=f"sim{k:>03}.png",
-        #     width=2000,
-        #     dpi=150
-        # )
+        convert_image(
+            image_in=f"sim{k:>03}_10_86400.0.png",
+            image_out=f"sim{k:>03}.png",
+            width=2000,
+            dpi=150
+        )
 
