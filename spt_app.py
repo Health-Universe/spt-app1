@@ -30,7 +30,7 @@ st.markdown("""
         """, unsafe_allow_html=True)
 
 
-data_path = Path(__file__).parent.parent / "data"
+data_path = Path(__file__).parent / "data"
 simulations_path = data_path / "simulations.tsv"
 
 @st.cache_data
