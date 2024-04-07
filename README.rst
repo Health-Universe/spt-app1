@@ -3,25 +3,12 @@
    :alt: spt-app logo
 
 spt-app: web application of SPT model
-=================================================================================================
-
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.8331377.svg
-   :target: https://doi.org/10.5281/zenodo.8331377
-   :alt: Zenodo DOI
-
-The objective of this project is to provide an overview of the simulation results from the following publication
+=====================================
+This project provides the visualization of the simulation results from
 
 Simulation of zonation-function relationships in the liver using coupled multiscale models: Application to drug-induced liver injury
 Steffen Gerhäusser, Lena Lambers, Luis Mandl, Julian Franquinet, Tim Ricken, Matthias König
 bioRxiv 2024.03.26.586870; doi: https://doi.org/10.1101/2024.03.26.586870
-
-
-How to cite
-===========
-
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.8331377.svg
-   :target: https://doi.org/10.5281/zenodo.8331377
-   :alt: Zenodo DOI
 
 Installation
 ============
